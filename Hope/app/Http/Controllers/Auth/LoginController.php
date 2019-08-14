@@ -46,10 +46,7 @@ class LoginController extends Controller
     }
     public function login()
     {
-        if(Auth()->check())
-            return redirect('admin/');
-        else
-            return view('admin.login');
+        return view('admin.login');
     }
     public function authenticate(Request $request)
     {
